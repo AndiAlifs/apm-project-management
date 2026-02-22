@@ -2,7 +2,7 @@
 
 **Tag:** `sprint/02-backend-api`
 **Phase:** 1 — Backend Foundation
-**Status:** 🔲 Planned
+**Status:** ✅ Done
 **Depends on:** Sprint 01
 
 ---
@@ -16,40 +16,40 @@ Implement all REST API endpoints for the core entities: Projects, Statuses, Task
 ## Tasks
 
 **Projects**
-- [ ] `GET    /api/projects` — list all
-- [ ] `POST   /api/projects` — create
-- [ ] `PUT    /api/projects/:id` — update
-- [ ] `DELETE /api/projects/:id` — delete (cascade tasks)
+- [x] `GET    /api/projects` — list all
+- [x] `POST   /api/projects` — create
+- [x] `PUT    /api/projects/:id` — update
+- [x] `DELETE /api/projects/:id` — delete (cascade tasks)
 
 **Statuses (Kanban Columns)**
-- [ ] `GET    /api/projects/:id/statuses` — list for project
-- [ ] `POST   /api/projects/:id/statuses` — create
-- [ ] `PUT    /api/statuses/:id` — update name / color / order
-- [ ] `DELETE /api/statuses/:id` — delete
+- [x] `GET    /api/projects/:id/statuses` — list for project
+- [x] `POST   /api/projects/:id/statuses` — create
+- [x] `PUT    /api/statuses/:id` — update name / color / order
+- [x] `DELETE /api/statuses/:id` — delete
 
 **Tasks**
-- [ ] `GET    /api/projects/:id/tasks` — list tasks for project
-- [ ] `GET    /api/tasks` — all tasks (backlog) with query filters: `?project=&status=&priority=&tag=&due_from=&due_to=`
-- [ ] `POST   /api/tasks` — create task
-- [ ] `PUT    /api/tasks/:id` — update task
-- [ ] `DELETE /api/tasks/:id` — delete task
-- [ ] `PATCH  /api/tasks/:id/status` — move to different status
+- [x] `GET    /api/projects/:id/tasks` — list tasks for project
+- [x] `GET    /api/tasks` — all tasks (backlog) with query filters: `?project=&status=&priority=&tag=&due_from=&due_to=`
+- [x] `POST   /api/tasks` — create task
+- [x] `PUT    /api/tasks/:id` — update task
+- [x] `DELETE /api/tasks/:id` — delete task
+- [x] `PATCH  /api/tasks/:id/status` — move to different status
 
 **Sub-tasks**
-- [ ] `POST   /api/tasks/:id/subtasks` — add sub-task
-- [ ] `PUT    /api/subtasks/:id` — update (title / is_done / order)
-- [ ] `DELETE /api/subtasks/:id` — delete
+- [x] `POST   /api/tasks/:id/subtasks` — add sub-task
+- [x] `PUT    /api/subtasks/:id` — update (title / is_done / order)
+- [x] `DELETE /api/subtasks/:id` — delete
 
 **Tags**
-- [ ] `GET    /api/tags` — list all tags
-- [ ] `POST   /api/tags` — create tag
-- [ ] `PUT    /api/tags/:id` — update name / color
-- [ ] `DELETE /api/tags/:id` — delete tag
-- [ ] `POST   /api/tasks/:id/tags/:tagId` — assign tag to task
-- [ ] `DELETE /api/tasks/:id/tags/:tagId` — remove tag from task
+- [x] `GET    /api/tags` — list all tags
+- [x] `POST   /api/tags` — create tag
+- [x] `PUT    /api/tags/:id` — update name / color
+- [x] `DELETE /api/tags/:id` — delete tag
+- [x] `POST   /api/tasks/:id/tags/:tagId` — assign tag to task
+- [x] `DELETE /api/tasks/:id/tags/:tagId` — remove tag from task
 
 **Seed Data**
-- [ ] Write a seed script (or manual SQL) to create one sample project with default statuses and sample tasks for testing
+- [x] Write a seed script (or manual SQL) to create one sample project with default statuses and sample tasks for testing
 
 ---
 
@@ -66,10 +66,10 @@ Implement all REST API endpoints for the core entities: Projects, Statuses, Task
 
 ## Completion Criteria
 
-- [ ] All endpoints return correct HTTP status codes (200, 201, 400, 404, 500)
-- [ ] Creating a project and immediately fetching it returns the same data
-- [ ] Deleting a project also removes its tasks (cascade verified in DB)
-- [ ] Task filter endpoint returns correct subset when filtering by project, tag, and priority simultaneously
-- [ ] Sub-task `is_done` toggle persists correctly
-- [ ] Tag assignment and removal reflected in task response
-- [ ] All endpoints tested manually via API client (Postman / Bruno / Swagger UI)
+- [x] All endpoints return correct HTTP status codes (200, 201, 400, 404, 500)
+- [x] Creating a project and immediately fetching it returns the same data
+- [x] Deleting a project also removes its tasks (cascade verified in DB)
+- [x] Task filter endpoint returns correct subset when filtering by project, tag, and priority simultaneously
+- [x] Sub-task `is_done` toggle persists correctly
+- [x] Tag assignment and removal reflected in task response
+- [x] All endpoints tested manually via API client (Postman / Bruno / Swagger UI)
