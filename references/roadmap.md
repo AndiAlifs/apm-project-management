@@ -8,7 +8,7 @@
 
 | Sprint | Tag | Phase | Focus | Status | Sprint Doc |
 |--------|-----|-------|-------|--------|------------|
-| 01 | `sprint/01-backend-core` | Phase 1 | Go project setup, DB schema, base router | 🔲 Planned | [sprint-01.md](./sprints/sprint-01.md) |
+| 01 | `sprint/01-backend-core` | Phase 1 | Go project setup, DB schema, base router | ✅ Done | [sprint-01.md](./sprints/sprint-01.md) |
 | 02 | `sprint/02-backend-api` | Phase 1 | Full REST API: projects, tasks, statuses, tags | 🔲 Planned | [sprint-02.md](./sprints/sprint-02.md) |
 | 03 | `sprint/03-frontend-shell` | Phase 2 | Angular scaffold, Tailwind, sidebar, routing | 🔲 Planned | [sprint-03.md](./sprints/sprint-03.md) |
 | 04 | `sprint/04-backlog-view` | Phase 2 | Backlog list view + task modal (data flows E2E) | 🔲 Planned | [sprint-04.md](./sprints/sprint-04.md) |

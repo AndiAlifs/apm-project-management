@@ -1,0 +1,21 @@
+# Backend build artifacts
+tmp/
+
+# Environment — never commit real credentials
+.env
+
+# Go binary
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with go test -c
+*.test
+
+# Output of go coverage tool
+*.out
+
+# Dependency directory (vendor)
+vendor/
