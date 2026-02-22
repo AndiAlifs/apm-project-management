@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply h-full bg-surface text-slate-100 font-sans antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600 rounded-full;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-600 hover:bg-primary-500
+           text-white text-sm font-medium transition-colors duration-150 focus:outline-none
+           focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-surface;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-slate-100
+           hover:bg-surface-overlay text-sm font-medium transition-colors duration-150;
+  }
+  .input-base {
+    @apply w-full bg-surface-overlay border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
+           placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
+           transition-shadow duration-150;
+  }
+  .select-base {
+    @apply input-base appearance-none cursor-pointer;
+  }
+  .badge-priority-low    { @apply bg-slate-700 text-slate-300; }
+  .badge-priority-medium { @apply bg-blue-900/60 text-blue-300; }
+  .badge-priority-high   { @apply bg-orange-900/60 text-orange-300; }
+  .badge-priority-urgent { @apply bg-red-900/60 text-red-300; }
+}
